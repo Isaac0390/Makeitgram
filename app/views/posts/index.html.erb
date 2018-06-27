@@ -1,0 +1,9 @@
+<%= link_to 'Create new Post', posts_new_path %>
+
+<% if @posts.length > 0 %>
+<ul>
+<% @posts.each do |post| %>
+  <li><%= post.description %></li>
+<% end %>
+</ul>
+<% end %>

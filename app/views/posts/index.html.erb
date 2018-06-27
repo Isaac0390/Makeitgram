@@ -1,9 +1,18 @@
-<%= link_to 'Create new Post', posts_new_path %>
-
-<% if @posts.length > 0 %>
-<ul>
 <% @posts.each do |post| %>
-  <li><%= post.description %></li>
-<% end %>
-</ul>
+<div class="post">
+  <div class="post__header">
+    <p>&nbsp;</p>
+  </div>
+  <div class="post__photo">
+    <p>&nbsp;</p>
+  </div>
+  <div class="post__body">
+    <div class="post__description">
+      <%= post.description %>
+    </div>
+    <div class="post__published">
+      <%= time_ago_in_words post.created_at %>
+    </div>
+  </div>
+</div>
 <% end %>

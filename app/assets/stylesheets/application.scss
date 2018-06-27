@@ -1,0 +1,32 @@
+@import "bootstrap";
+@import "posts";
+body {
+  background-color: #fafafa;
+}
+
+nav {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.post {
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  margin: 60px;
+  &__header {
+    padding: 0 16px;
+  }
+  &__body {
+    font-size: 14px;
+    padding: 16px;
+  }
+  &__published {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+}

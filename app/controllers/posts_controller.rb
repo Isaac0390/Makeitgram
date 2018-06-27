@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post
-              .select(:description)
+              .select(:description, :created_at)
               .order(created_at: :desc)
               .limit(10)
   end

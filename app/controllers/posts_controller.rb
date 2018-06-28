@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   def index
     @posts = Post
-              .select(:description, :created_at)
               .order(created_at: :desc)
               .limit(10)
   end
@@ -25,6 +24,6 @@ class PostsController < ApplicationController
 
   private
     def post_params
-      params.require(:post).permit(:description, :location)
+      params.require(:post).permit(:photo, :description, :location)
     end
 end

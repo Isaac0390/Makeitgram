@@ -6,6 +6,10 @@
 <% end %>
 <%= form_for @post do |form| %>
   <p>
+    <%= form.label :photo %>
+    <%= form.file_field :photo %>
+  </p>
+  <p>
     <%= form.label :description %>
     <%= form.text_area :description %>
   </p>

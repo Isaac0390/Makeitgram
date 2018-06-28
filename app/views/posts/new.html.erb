@@ -1,3 +1,9 @@
+<% if @post.errors.full_messages.any? %>
+<% @post.errors.full_messages.each do |message| %>
+<p><%= message %></p>
+<% end %>
+
+<% end %>
 <%= form_for @post do |form| %>
   <p>
     <%= form.label :description %>

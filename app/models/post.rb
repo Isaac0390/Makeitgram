@@ -1,2 +1,3 @@
 class Post < ApplicationRecord
-end
+    validates :description, presence: true
+  end

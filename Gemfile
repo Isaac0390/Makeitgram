@@ -66,3 +66,5 @@ gem 'jquery-rails'
 
 gem 'coffee-script-source', '1.8.0'
 gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+
+gem 'paperclip', "~> 6.0.0"

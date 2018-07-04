@@ -1,9 +1,15 @@
 <div class="post">
   <div class="post__header">
-    <p>&nbsp;</p>
+    <p><%= item.user.username %></p>
   </div>
   <div class="post__photo">
-    <%= image_tag item.photo.url(:medium) %>
+    <% if show_link %>
+      <%= link_to posts_show_path(item.id) do %>
+      <%= image_tag item.photo.url %>
+      <% end %>
+    <% else %>
+      <%= image_tag item.photo.url %>
+    <% end %>
   </div>
   <div class="post__body">
     <div class="post__description">

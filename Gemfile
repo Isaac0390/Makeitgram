@@ -70,3 +70,6 @@ gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 gem 'paperclip', "~> 6.0.0"
 
 gem 'devise'
+
+#Send mails
+gem 'letter_opener'

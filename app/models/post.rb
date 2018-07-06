@@ -5,4 +5,12 @@ class Post < ApplicationRecord
   validates :description, presence: true
 
   belongs_to :user
+
+  def self.latest(num)
+    order(created_at: :desc).limit(num)
+  end
+
+  after_save do
+    PostMailer.congrats(user).deliver_now
+  end
 end

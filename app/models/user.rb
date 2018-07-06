@@ -3,5 +3,15 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-    has_many :posts
+  has_many :posts
+
+  # Virtual fields
+  def name
+    "#{firstname} #{lastname}"
+  end
+
+  # getProfile
+  def self.getProfile(username)
+    find_by(username: username)
+  end
 end

@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
+
   def index
-    @posts = Post
-              .order(created_at: :desc)
-              .limit(10)
+    @posts = Post.latest(10)
   end
 
   def new
@@ -11,7 +11,8 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.user_id = 1
+    @post.user_id = current_user.id
+
     if @post.save 
       redirect_to posts_path, notice: 'The post was successfully created'
     else

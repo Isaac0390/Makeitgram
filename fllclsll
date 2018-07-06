@@ -1,0 +1,47 @@
+[33mcommit 6598cd98fb0a608b4956befa7d1d9c473d5e10e0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Isaac Garcia <isaacdy@hotmail.com>
+Date:   Tue Jul 3 20:39:36 2018 -0500
+
+    Print Username in Post
+
+[33mcommit 20d4c272274178253acc5489fdcfb97a14ec19dc[m
+Author: Isaac Garcia <isaacdy@hotmail.com>
+Date:   Thu Jun 28 18:37:31 2018 -0500
+
+    Add form, error messages and flash alerts styling
+
+[33mcommit ace59c2385a52921bc85517104becdd9988405f8[m
+Author: Isaac Garcia <isaacdy@hotmail.com>
+Date:   Thu Jun 28 13:32:22 2018 -0500
+
+    Add photo file
+
+[33mcommit c6307b6413f1a604f6e72e99dee4d9ae9fc98a84[m
+Author: Isaac Garcia <isaacdy@hotmail.com>
+Date:   Thu Jun 28 13:15:21 2018 -0500
+
+    Add Validation and messages
+
+[33mcommit 4d720ae46677e4916eeafdfb329a42347e4484a3[m
+Author: Isaac Garcia <isaacdy@hotmail.com>
+Date:   Thu Jun 28 13:12:48 2018 -0500
+
+    Add Show Post and Partial Post
+
+[33mcommit 1280620bd66c51ecfb1c88f74f235f6dc4a73d48[m
+Author: Isaac Garcia <isaacdy@hotmail.com>
+Date:   Wed Jun 27 13:33:26 2018 -0500
+
+    Add bootstrap and create custom styles
+
+[33mcommit 348e9569b7bb4a1cbb2997990fe467a84967e67d[m
+Author: Isaac Garcia <isaacdy@hotmail.com>
+Date:   Tue Jun 26 19:11:19 2018 -0500
+
+    Create and List All Post
+
+[33mcommit 784fd6fbf264814e730c2c99ab1ba5cc86970504[m
+Author: Isaac Garcia <isaacdy@hotmail.com>
+Date:   Thu Jun 21 20:32:35 2018 -0500
+
+    Initial commit

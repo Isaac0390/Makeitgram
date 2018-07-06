@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  has_attached_file :photo, styles: { large: "720x720>", medium: "640x640>", thumb:  "128x128>" }, default_url: "/images/:style/missing.png"
+  has_attached_file :photo, default_url: "/images/:style/missing.png"
   validates_attachment_content_type :photo, content_type: /\Aimage\/.*\z/
   validates :photo, attachment_presence: true
   validates :description, presence: true
@@ -9,11 +9,8 @@ class Post < ApplicationRecord
   def self.latest(num)
     order(created_at: :desc).limit(num)
   end
-<<<<<<< HEAD
 
   after_save do
     PostMailer.congrats(user).deliver_now
   end
-=======
->>>>>>> 9818fd24dfe010a7f565edc615582772737bb1fa
 end
